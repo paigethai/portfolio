@@ -1,1 +1,25 @@
 @use './variables' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+a,
+li {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1rem 2vw 0.8rem);
+}
+
+p {
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-size: (0.8rem 2vw, 1rem);
+}
