@@ -6,7 +6,7 @@
     justify-content: space-between;
 
     .logo {
-        padding: 1rem;
+        padding: 2rem;
         width: 50%;
         border: 1px solid $borderColor;
         background-color: $headerColorOne;
@@ -20,13 +20,24 @@
 
         ul {
             display: flex;
-            gap: 10%;
+            gap: 6%;
 
             li {
-                padding: 1rem 0 0 3rem;
+                padding: 2rem 0 0 2.7rem;
             }
         }
     }
+}
+
+nav a {
+    padding: 5px;
+} 
+
+nav a:hover,
+a:focus {
+    color: $buttonText;
+    border: 1px solid $borderColor;
+    cursor: pointer;
 }
 
 .color-blocks {

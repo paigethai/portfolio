@@ -310,11 +310,6 @@ p {
   letter-spacing: 0.2rem;
 }
 
-button {
-  border: 1px solid #000000;
-  padding: 0.8rem 2rem;
-}
-
 .logo-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,7 +319,7 @@ button {
           justify-content: space-between;
 }
 .logo-nav .logo {
-  padding: 1rem;
+  padding: 2rem;
   width: 50%;
   border: 1px solid #000000;
   background-color: #C36724;
@@ -339,10 +334,21 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10%;
+  gap: 6%;
 }
 .logo-nav nav ul li {
-  padding: 1rem 0 0 3rem;
+  padding: 2rem 0 0 2.7rem;
+}
+
+nav a {
+  padding: 5px;
+}
+
+nav a:hover,
+a:focus {
+  color: #813702;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .color-blocks {
@@ -382,14 +388,26 @@ img {
 
 .individual-project {
   position: relative;
+  margin-top: 3rem;
   text-align: center;
 }
 .individual-project h4 {
-  font-size: 2.5rem;
-  margin-top: 6rem;
+  font-size: clamp(2rem, 2vw, 0.8rem);
+  margin-top: 7%;
 }
 .individual-project p {
-  padding: 2rem 5rem;
+  font-size: clamp(1rem, 2vw, 0.5rem);
+  padding: 5% 5%;
+}
+.individual-project button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+.individual-project button a {
+  color: #813702;
 }
 
 .overlay {
