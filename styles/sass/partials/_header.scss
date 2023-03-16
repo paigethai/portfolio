@@ -1,3 +1,55 @@
 @use './variables' as *;
 @use './mixins' as *;
 
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        padding: 1rem;
+        width: 50%;
+        border: 1px solid $borderColor;
+        background-color: $headerColorOne;
+    }
+
+    nav {
+        padding: 1rem;
+        width: 50%;
+        border: 1px solid $borderColor;
+
+        ul {
+            display: flex;
+            gap: 3rem;
+
+            li {
+                padding: 1rem 0 0 3rem;
+            }
+        }
+    }
+}
+
+.color-blocks {
+    display: flex;
+    height: 85vh;
+    border: 1px solid $borderColor;
+
+    .orange-block {
+        width: 50%;
+        height: 100%;
+        border: 1px solid $borderColor;
+        background-color: $headerColorOne;
+    }
+
+    .green-block {        
+    width: 50%;
+    height: 100%;
+    border: 1px solid $borderColor;
+    background-color: $headerColorTwo;
+
+    h1 {
+        margin-top: 20rem;
+        margin-right: 5rem;
+        text-align: right;
+    }
+    }
+}

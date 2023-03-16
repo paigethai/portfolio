@@ -284,12 +284,77 @@ button {
 p,
 a,
 li {
+  color: #000000;
   font-family: "DM Sans", sans-serif;
   font-size: clamp(1rem, 2vw, 0.8rem);
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 p {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   font-size: 0.8rem, 2vw, 1rem;
+}
+
+.logo {
+  color: #000000;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo-nav .logo {
+  padding: 1rem;
+  width: 50%;
+  border: 1px solid #000000;
+  background-color: #C36724;
+}
+.logo-nav nav {
+  padding: 1rem;
+  width: 50%;
+  border: 1px solid #000000;
+}
+.logo-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+.logo-nav nav ul li {
+  padding: 1rem 0 0 3rem;
+}
+
+.color-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  border: 1px solid #000000;
+}
+.color-blocks .orange-block {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000000;
+  background-color: #C36724;
+}
+.color-blocks .green-block {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000000;
+  background-color: #9FA05E;
+}
+.color-blocks .green-block h1 {
+  margin-top: 20rem;
+  margin-right: 5rem;
+  text-align: right;
 }
