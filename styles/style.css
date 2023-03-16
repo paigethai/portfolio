@@ -1,0 +1,557 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  color: #000000;
+  background-color: #F5F5F5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html {
+  font-size: 120%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a,
+li {
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1rem, 2vw, 0.8rem);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem, 2vw, 1rem;
+}
+
+.logo {
+  color: #000000;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo-nav .logo {
+  padding: 2rem;
+  width: 50%;
+  border: 1px solid #000000;
+  background-color: #C36724;
+}
+.logo-nav nav {
+  background-color: #F5F5F5;
+  padding: 1rem;
+  width: 50%;
+  border: 1px solid #000000;
+}
+.logo-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6%;
+}
+.logo-nav nav ul li {
+  padding: 2rem 0 0 2.7rem;
+}
+
+nav a {
+  padding: 5px;
+}
+
+nav a:hover,
+a:focus {
+  color: #813702;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.color-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  border: 1px solid #000000;
+}
+.color-blocks .orange-block {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000000;
+  background-color: #C36724;
+}
+.color-blocks .green-block {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000000;
+  background-color: #9FA05E;
+}
+.color-blocks .green-block h1 {
+  position: absolute;
+  bottom: 28%;
+  right: 5%;
+  text-align: right;
+}
+
+img {
+  border: 1.5px solid #000000;
+}
+
+.projects {
+  padding-bottom: 7rem;
+  border-bottom: 1px solid #000000;
+}
+.projects h3 {
+  text-align: center;
+  margin: 5rem;
+}
+
+.individual-project {
+  position: relative;
+  margin-top: 3rem;
+  text-align: center;
+}
+.individual-project h4 {
+  font-size: clamp(2rem, 2vw, 0.8rem);
+  margin-top: 7%;
+}
+.individual-project p {
+  font-size: clamp(1rem, 2vw, 0.5rem);
+  padding: 5% 5%;
+}
+.individual-project button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+.individual-project button a {
+  color: #813702;
+}
+.individual-project button a {
+  border: none;
+  padding: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  background-color: #C9D196;
+  opacity: 95%;
+}
+
+.individual-project:hover .overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.project-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.shoe-kloset p,
+.bikerland p {
+  padding: 10% 5%;
+}
+
+.about {
+  margin-top: 3rem;
+}
+.about h3 {
+  text-align: center;
+  margin: 5rem;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-container figure {
+  width: 45%;
+  margin-top: 1.5rem;
+}
+.about-container figure img {
+  border: none;
+  border-radius: 5%;
+}
+.about-container .underlay {
+  position: absolute;
+  right: 10%;
+  height: 30rem;
+  width: 45%;
+  background-color: rgba(156, 180, 194, 0.6745098039);
+  border-radius: 5%;
+  z-index: 10;
+}
+.about-container .text-container {
+  width: 60%;
+  margin: 1.5rem;
+  padding: 1rem 2rem 1rem 3rem;
+  z-index: 20;
+}
+
+.skills {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 7rem;
+}
+
+.break-line {
+  margin-top: 10rem;
+  border: 1px solid #000000;
+}
+
+.skills h3 {
+  margin: 5rem;
+  text-align: center;
+}
+
+.skills-icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 7%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills-icons-list li {
+  text-align: center;
+  padding: 1rem;
+}
+.skills-icons-list i {
+  font-size: 3.5rem;
+}
+.skills-icons-list img {
+  border: none;
+  width: 75%;
+}
+
+.contact h3 {
+  margin: 5rem 0 2rem 0;
+  text-align: center;
+}
+.contact li {
+  padding: 1rem;
+}
+.contact a {
+  font-size: 1.5rem;
+}
+
+.contact a:hover,
+a:focus {
+  color: #813702;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #9FA05E;
+  margin-top: 5rem;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

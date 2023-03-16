@@ -1,0 +1,69 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        padding: 2rem;
+        width: 50%;
+        border: 1px solid $borderColor;
+        background-color: $headerColorOne;
+    }
+
+    nav {
+        background-color: $backgroundColor;
+        padding: 1rem;
+        width: 50%;
+        border: 1px solid $borderColor;
+
+        ul {
+            display: flex;
+            gap: 6%;
+
+            li {
+                padding: 2rem 0 0 2.7rem;
+            }
+        }
+    }
+}
+
+nav a {
+    padding: 5px;
+} 
+
+nav 
+a:hover,
+a:focus {
+    color: $buttonText;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+}
+
+.color-blocks {
+    display: flex;
+    height: 85vh;
+    border: 1px solid $borderColor;
+
+    .orange-block {
+        width: 50%;
+        height: 100%;
+        border: 1px solid $borderColor;
+        background-color: $headerColorOne;
+    }
+
+    .green-block {        
+    width: 50%;
+    height: 100%;
+    border: 1px solid $borderColor;
+    background-color: $headerColorTwo;
+
+    h1 {
+        position: absolute;
+        bottom: 28%;
+        right: 5%;
+        text-align: right;
+    }
+    }
+}
