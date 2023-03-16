@@ -101,3 +101,62 @@ img {
         z-index: 20;
     }
 }
+
+.skills {
+    border-bottom: 1px solid $borderColor;
+    padding-bottom: 7rem;
+}
+
+.break-line {
+    margin-top: 7rem;
+    border: 1px solid $borderColor;
+}
+
+.skills h3 {
+    margin: 5rem;
+    text-align: center;
+}
+
+.skills-icons-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    
+    li {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    i {
+        font-size: 3.5rem;
+    }
+
+    img {
+        border: none;
+        width: 75%;
+    }
+}
+
+.contact {
+    h3 {
+    margin: 5rem;
+    text-align: center;
+    }
+
+    li {
+        padding: 1rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+.contact 
+a:hover,
+a:focus {
+    color: $buttonText;
+    cursor: pointer;
+}

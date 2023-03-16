@@ -482,3 +482,62 @@ img {
   padding: 1rem 2rem 1rem 3rem;
   z-index: 20;
 }
+
+.skills {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 7rem;
+}
+
+.break-line {
+  margin-top: 7rem;
+  border: 1px solid #000000;
+}
+
+.skills h3 {
+  margin: 5rem;
+  text-align: center;
+}
+
+.skills-icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 7%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills-icons-list li {
+  text-align: center;
+  padding: 1rem;
+}
+.skills-icons-list i {
+  font-size: 3.5rem;
+}
+.skills-icons-list img {
+  border: none;
+  width: 75%;
+}
+
+.contact h3 {
+  margin: 5rem;
+  text-align: center;
+}
+.contact li {
+  padding: 1rem;
+}
+.contact a {
+  font-size: 1.5rem;
+}
+
+.contact a:hover,
+a:focus {
+  color: #813702;
+  cursor: pointer;
+}

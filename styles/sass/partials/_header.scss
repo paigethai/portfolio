@@ -33,7 +33,8 @@ nav a {
     padding: 5px;
 } 
 
-nav a:hover,
+nav 
+a:hover,
 a:focus {
     color: $buttonText;
     border: 1px solid $borderColor;
