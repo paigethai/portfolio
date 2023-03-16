@@ -445,3 +445,40 @@ img {
 .bikerland p {
   padding: 10% 5%;
 }
+
+.about {
+  margin-top: 3rem;
+}
+.about h3 {
+  text-align: center;
+  margin: 5rem;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-container figure {
+  width: 45%;
+  margin-top: 1.5rem;
+}
+.about-container figure img {
+  border: none;
+  border-radius: 5%;
+}
+.about-container .underlay {
+  position: absolute;
+  right: 10%;
+  height: 60%;
+  width: 45%;
+  background-color: rgba(156, 180, 194, 0.6745098039);
+  border-radius: 5%;
+  z-index: 10;
+}
+.about-container .text-container {
+  width: 60%;
+  margin: 1.5rem;
+  padding: 1rem 2rem 1rem 3rem;
+  z-index: 20;
+}

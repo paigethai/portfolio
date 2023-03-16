@@ -62,3 +62,42 @@ img {
     }
 }
 
+.about {
+    margin-top: 3rem;
+
+    h3 {
+        text-align: center;
+        margin: 5rem;
+    }
+}
+
+.about-container {
+    display: flex;
+    
+    figure {
+        width: 45%;
+        margin-top: 1.5rem;
+
+        img {
+            border: none;
+            border-radius: 5%;
+        }
+    }
+
+    .underlay{
+        position: absolute;
+        right: 10%;
+        height: 60%;
+        width: 45%;
+        background-color: $underlay;
+        border-radius: 5%;
+        z-index: 10;
+    }
+
+    .text-container {
+        width: 60%;
+        margin: 1.5rem;
+        padding: 1rem 2rem 1rem 3rem;
+        z-index: 20;
+    }
+}
