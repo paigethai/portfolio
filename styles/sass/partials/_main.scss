@@ -1,2 +1,46 @@
 @use './variables' as *;
 @use './mixins' as *;
+
+img {
+    border: 1.5px solid $borderColor;
+}
+
+.projects h3 {
+    text-align: center;
+    margin: 5rem;
+}
+
+.individual-project {
+    position: relative;
+    text-align: center;
+
+    h4 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+
+    p {
+        padding: 2rem 5rem;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: scale(0);
+    transition: all 0s ease-in-out;
+    background-color: $overlay;
+    opacity: 95%;
+    // backdrop-filter: blur(8px) brightness(80%);
+}
+
+.individual-project:hover .overlay {
+    transform: scale(1);
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

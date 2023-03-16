@@ -1,0 +1,6 @@
+@use './variables' as *;
+
+button {
+    border: 1px solid $borderColor;
+    padding: 0.8rem 2rem;
+}

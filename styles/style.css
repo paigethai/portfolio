@@ -222,7 +222,8 @@ template {
 }
 
 html {
-  color: black;
+  color: #000000;
+  background-color: #F5F5F5;
 }
 
 img {
@@ -290,7 +291,11 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
 }
 
 p {
@@ -303,6 +308,11 @@ p {
   color: #000000;
   font-size: 3rem;
   letter-spacing: 0.2rem;
+}
+
+button {
+  border: 1px solid #000000;
+  padding: 0.8rem 2rem;
 }
 
 .logo-nav {
@@ -320,6 +330,7 @@ p {
   background-color: #C36724;
 }
 .logo-nav nav {
+  background-color: #F5F5F5;
   padding: 1rem;
   width: 50%;
   border: 1px solid #000000;
@@ -328,7 +339,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
+  gap: 10%;
 }
 .logo-nav nav ul li {
   padding: 1rem 0 0 3rem;
@@ -354,7 +365,56 @@ p {
   background-color: #9FA05E;
 }
 .color-blocks .green-block h1 {
-  margin-top: 20rem;
-  margin-right: 5rem;
+  position: absolute;
+  bottom: 28%;
+  right: 5%;
   text-align: right;
+}
+
+img {
+  border: 1.5px solid #000000;
+}
+
+.projects h3 {
+  text-align: center;
+  margin: 5rem;
+}
+
+.individual-project {
+  position: relative;
+  text-align: center;
+}
+.individual-project h4 {
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+.individual-project p {
+  padding: 2rem 5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  background-color: #C9D196;
+  opacity: 95%;
+}
+
+.individual-project:hover .overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.project-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
