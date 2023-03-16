@@ -27,11 +27,15 @@ img {
     p {
         font-size: clamp(1rem, 2vw, 0.5rem);
         padding: 5% 5%;
-        
     }
 
     button {
         @include button;
+        
+        a {
+            border: none;
+            padding: 5px;
+        }
     }
 }
 
@@ -87,7 +91,7 @@ img {
     .underlay{
         position: absolute;
         right: 10%;
-        height: 60%;
+        height: 30rem;
         width: 45%;
         background-color: $underlay;
         border-radius: 5%;
@@ -108,7 +112,7 @@ img {
 }
 
 .break-line {
-    margin-top: 7rem;
+    margin-top: 10rem;
     border: 1px solid $borderColor;
 }
 
@@ -141,7 +145,7 @@ img {
 
 .contact {
     h3 {
-    margin: 5rem;
+    margin: 5rem 0 2rem 0;
     text-align: center;
     }
 

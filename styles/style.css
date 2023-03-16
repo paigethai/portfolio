@@ -413,6 +413,10 @@ img {
 .individual-project button a {
   color: #813702;
 }
+.individual-project button a {
+  border: none;
+  padding: 5px;
+}
 
 .overlay {
   position: absolute;
@@ -470,7 +474,7 @@ img {
 .about-container .underlay {
   position: absolute;
   right: 10%;
-  height: 60%;
+  height: 30rem;
   width: 45%;
   background-color: rgba(156, 180, 194, 0.6745098039);
   border-radius: 5%;
@@ -489,7 +493,7 @@ img {
 }
 
 .break-line {
-  margin-top: 7rem;
+  margin-top: 10rem;
   border: 1px solid #000000;
 }
 
@@ -526,7 +530,7 @@ img {
 }
 
 .contact h3 {
-  margin: 5rem;
+  margin: 5rem 0 2rem 0;
   text-align: center;
 }
 .contact li {
@@ -540,4 +544,14 @@ img {
 a:focus {
   color: #813702;
   cursor: pointer;
+}
+
+footer {
+  background-color: #9FA05E;
+  margin-top: 5rem;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
