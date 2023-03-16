@@ -5,11 +5,15 @@ img {
     border: 1.5px solid $borderColor;
 }
 
-.projects h3 {
+.projects {
+    padding-bottom: 7rem;
+    border-bottom: 1px solid $borderColor;
+
+    h3 {
     text-align: center;
     margin: 5rem;
+    }
 }
-
 .individual-project {
     position: relative;
     margin-top: 3rem;
@@ -50,3 +54,11 @@ img {
     display: flex;
     justify-content: space-evenly;
 }
+
+.shoe-kloset,
+.bikerland {
+    p {
+        padding: 10% 5%;
+    }
+}
+

@@ -381,6 +381,10 @@ img {
   border: 1.5px solid #000000;
 }
 
+.projects {
+  padding-bottom: 7rem;
+  border-bottom: 1px solid #000000;
+}
 .projects h3 {
   text-align: center;
   margin: 5rem;
@@ -435,4 +439,9 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.shoe-kloset p,
+.bikerland p {
+  padding: 10% 5%;
 }
