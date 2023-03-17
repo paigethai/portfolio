@@ -1,2 +1,8 @@
 @use './variables' as *;
 @use './mixins' as *;
+
+@media (max-width: 1280px) {
+    .logo-nav nav ul {
+        gap: 0;
+    }
+}

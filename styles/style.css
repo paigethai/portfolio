@@ -291,7 +291,7 @@ li {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(4rem, 2vw, 2rem);
 }
 
 h3 {
@@ -302,6 +302,11 @@ p {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   font-size: 0.8rem, 2vw, 1rem;
+}
+
+a:hover,
+a:focus {
+  color: #813702;
 }
 
 .logo {
@@ -320,12 +325,12 @@ p {
   position: fixed;
   width: 100%;
   z-index: 30;
+  border: 1px solid #000000;
+  background-color: #C36724;
 }
 .logo-nav .logo {
   padding: 1rem;
   width: 50%;
-  border: 1px solid #000000;
-  background-color: #C36724;
 }
 .logo-nav nav {
   background-color: #F5F5F5;
@@ -422,6 +427,12 @@ img {
   padding: 5px;
 }
 
+button:hover,
+button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -502,7 +513,7 @@ img {
 }
 
 .skills h3 {
-  margin: 5rem 5rem 2rem 5rem;
+  margin: 5rem 5rem 3rem 5rem;
   text-align: center;
 }
 
@@ -544,12 +555,6 @@ img {
   font-size: 1.5rem;
 }
 
-.contact a:hover,
-a:focus {
-  color: #813702;
-  cursor: pointer;
-}
-
 footer {
   background-color: #9FA05E;
   margin-top: 5rem;
@@ -558,4 +563,10 @@ footer p {
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .logo-nav nav ul {
+    gap: 0;
+  }
 }

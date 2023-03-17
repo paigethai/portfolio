@@ -24,7 +24,7 @@ li {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: clamp(4rem, 2vw, 2rem);
 }
 
 h3 {
@@ -35,6 +35,11 @@ p {
     line-height: 1.5rem;
     letter-spacing: 0.05rem;
     font-size: (0.8rem, 2vw, 1rem);
+}
+
+a:hover,
+a:focus {
+    color: $buttonText;
 }
 
 .logo {
