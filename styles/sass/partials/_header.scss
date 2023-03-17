@@ -4,9 +4,12 @@
 .logo-nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
 
     .logo {
-        padding: 2rem;
+        padding: 1rem;
         width: 50%;
         border: 1px solid $borderColor;
         background-color: $headerColorOne;
@@ -14,16 +17,17 @@
 
     nav {
         background-color: $backgroundColor;
-        padding: 1rem;
+        // padding: 1rem;
         width: 50%;
         border: 1px solid $borderColor;
 
         ul {
             display: flex;
+            justify-content: center;
             gap: 6%;
 
             li {
-                padding: 2rem 0 0 2.7rem;
+                padding: 2rem;
             }
         }
     }
@@ -34,11 +38,14 @@ nav a {
 } 
 
 nav 
-a:hover,
-a:focus {
+a:hover {
     color: $buttonText;
     border: 1px solid $borderColor;
     cursor: pointer;
+
+    a:focus {
+        color: red;
+    }
 }
 
 .color-blocks {

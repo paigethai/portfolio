@@ -317,16 +317,18 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
 }
 .logo-nav .logo {
-  padding: 2rem;
+  padding: 1rem;
   width: 50%;
   border: 1px solid #000000;
   background-color: #C36724;
 }
 .logo-nav nav {
   background-color: #F5F5F5;
-  padding: 1rem;
   width: 50%;
   border: 1px solid #000000;
 }
@@ -334,21 +336,26 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 6%;
 }
 .logo-nav nav ul li {
-  padding: 2rem 0 0 2.7rem;
+  padding: 2rem;
 }
 
 nav a {
   padding: 5px;
 }
 
-nav a:hover,
-a:focus {
+nav a:hover {
   color: #813702;
   border: 1px solid #000000;
   cursor: pointer;
+}
+nav a:hover a:focus {
+  color: red;
 }
 
 .color-blocks {
@@ -409,9 +416,6 @@ img {
   letter-spacing: 0.05rem;
   padding: 0.8rem 2rem;
   cursor: pointer;
-}
-.individual-project button a {
-  color: #813702;
 }
 .individual-project button a {
   border: none;
@@ -498,7 +502,7 @@ img {
 }
 
 .skills h3 {
-  margin: 5rem;
+  margin: 5rem 5rem 2rem 5rem;
   text-align: center;
 }
 
