@@ -587,7 +587,7 @@ footer p {
   }
   .hamburger-menu button {
     position: absolute;
-    top: 1.5rem;
+    top: 0.5rem;
     right: 2rem;
     background: none;
     border: none;
