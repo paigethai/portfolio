@@ -401,6 +401,9 @@ nav a:hover {
 .color-blocks .show-green {
   display: none;
 }
+.color-blocks .show-green h2 {
+  display: none;
+}
 
 img {
   border: 1.5px solid #000000;
