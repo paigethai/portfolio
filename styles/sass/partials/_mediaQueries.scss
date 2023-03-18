@@ -5,13 +5,73 @@
     .logo-nav nav ul {
         gap: 0;
     }
+}
 
-    figure {
-        width: 50%;
+@media (max-width: 1050px) {
+    .nav-menu {
+        display: none;
     }
 
-    // .text-container {
-    //     width: 50%;
-    //     margin: 0;
-    // }
+    .hamburger-menu {
+        display: block;
+        position: relative;
+
+        button {
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                :hover,
+                :focus {
+                    color: $buttonText;
+                }
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+    }
+
+    .ham-links {
+        display: none;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+    
+    .logo-nav nav ul li {
+        padding: 1rem;
+    }
+
+    .about h3 {
+        margin: 5rem 0 2rem 0;
+    }
+    .about-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+        figure {
+            width: 100%;
+        }
+
+        .text-container {
+            width: 100%;
+            margin-top: 2.5rem;
+        }
+    }
+
+
+    .break-line {
+        margin-top: 4rem;
+    }
 }

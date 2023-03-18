@@ -365,6 +365,10 @@ nav a:hover {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .color-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,23 +483,23 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .about-container figure {
-  width: 45%;
-  margin-top: 1.5rem;
+  width: 40%;
 }
 .about-container figure img {
   border: none;
   border-radius: 5%;
 }
 .about-container .text-container {
-  width: 60%;
-  margin: 1rem;
-  padding: 1rem 2rem 1rem 3rem;
+  width: 45%;
   z-index: 20;
 }
 .about-container p {
-  margin: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills {
@@ -565,7 +569,69 @@ footer p {
   .logo-nav nav ul {
     gap: 0;
   }
-  figure {
-    width: 50%;
+}
+@media (max-width: 1050px) {
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    position: relative;
+  }
+  .hamburger-menu button {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .hamburger-menu button :hover,
+  .hamburger-menu button :focus {
+    color: #813702;
+  }
+  .hamburger-menu button i {
+    font-size: 2rem;
+  }
+  .ham-links {
+    display: none;
+  }
+  .ham-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ham-links ul li {
+    padding: 1rem;
+  }
+  .logo-nav nav ul li {
+    padding: 1rem;
+  }
+  .about h3 {
+    margin: 5rem 0 2rem 0;
+  }
+  .about-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-container figure {
+    width: 100%;
+  }
+  .about-container .text-container {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .break-line {
+    margin-top: 4rem;
   }
 }
