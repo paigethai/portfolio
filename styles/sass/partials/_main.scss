@@ -93,21 +93,25 @@ button:focus {
         }
     }
 
-    .underlay{
-        position: absolute;
-        right: 10%;
-        height: 30rem;
-        width: 45%;
-        background-color: $underlay;
-        border-radius: 5%;
-        z-index: 10;
-    }
+    // .underlay{
+    //     position: absolute;
+    //     right: 10%;
+    //     height: 63%;
+    //     width: 45%;
+    //     background-color: $underlay;
+    //     border-radius: 5%;
+    //     z-index: 10;
+    // }
 
     .text-container {
         width: 60%;
-        margin: 1.5rem;
+        margin: 1rem;
         padding: 1rem 2rem 1rem 3rem;
         z-index: 20;
+    }
+
+    p {
+        margin: 0.5rem;
     }
 }
 

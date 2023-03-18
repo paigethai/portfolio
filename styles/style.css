@@ -287,11 +287,11 @@ a,
 li {
   color: #000000;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(1rem, 2vw, 0.8rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 h1 {
-  font-size: clamp(4rem, 2vw, 2rem);
+  font-size: 3rem;
 }
 
 h3 {
@@ -313,6 +313,11 @@ a:focus {
   color: #000000;
   font-size: 3rem;
   letter-spacing: 0.2rem;
+}
+
+.contact-links {
+  text-decoration: underline;
+  color: #813702;
 }
 
 .logo-nav {
@@ -359,15 +364,12 @@ nav a:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
-nav a:hover a:focus {
-  color: red;
-}
 
 .color-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
+  height: 90vh;
   border: 1px solid #000000;
 }
 .color-blocks .orange-block {
@@ -486,20 +488,14 @@ button:focus {
   border: none;
   border-radius: 5%;
 }
-.about-container .underlay {
-  position: absolute;
-  right: 10%;
-  height: 30rem;
-  width: 45%;
-  background-color: rgba(156, 180, 194, 0.6745098039);
-  border-radius: 5%;
-  z-index: 10;
-}
 .about-container .text-container {
   width: 60%;
-  margin: 1.5rem;
+  margin: 1rem;
   padding: 1rem 2rem 1rem 3rem;
   z-index: 20;
+}
+.about-container p {
+  margin: 0.5rem;
 }
 
 .skills {
@@ -568,5 +564,8 @@ footer p {
 @media (max-width: 1280px) {
   .logo-nav nav ul {
     gap: 0;
+  }
+  figure {
+    width: 50%;
   }
 }

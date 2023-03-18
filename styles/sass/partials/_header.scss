@@ -42,15 +42,11 @@ a:hover {
     color: $buttonText;
     border: 1px solid $borderColor;
     cursor: pointer;
-
-    a:focus {
-        color: red;
-    }
 }
 
 .color-blocks {
     display: flex;
-    height: 85vh;
+    height: 90vh;
     border: 1px solid $borderColor;
 
     .orange-block {
