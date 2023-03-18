@@ -373,6 +373,10 @@ nav a:hover {
   display: none;
 }
 
+.show-green {
+  display: none;
+}
+
 .color-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,12 +401,6 @@ nav a:hover {
   bottom: 28%;
   right: 5%;
   text-align: right;
-}
-.color-blocks .show-green {
-  display: none;
-}
-.color-blocks .show-green h2 {
-  display: none;
 }
 
 img {

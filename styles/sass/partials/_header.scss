@@ -48,6 +48,10 @@ a:hover {
     display: none;
 }
 
+.show-green {
+    display: none;
+}
+
 .color-blocks {
     display: flex;
     height: 90vh;
@@ -72,13 +76,5 @@ a:hover {
         right: 5%;
         text-align: right;
     }
-    }
-
-    .show-green {
-        display: none;
-        
-        h2 {
-            display: none;
-        }
     }
 }
