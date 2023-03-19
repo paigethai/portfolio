@@ -209,11 +209,33 @@
         <section class="contact" id="contact">
             <div class="wrapper">
                 <h3>Contact</h3>
+
+                <div class="email-container">
+                    <h4>Email</h4>
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/mayzbrvo" method="POST">
+                            <div class="user-info">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="text" name="email" id="email" placeholder="Email" required>
+                            </div> <!-- end of user-info -->
+
+                            <div class="text-send">
+                                <textarea name="message" id="message" placeholder="Drop your message here" required></textarea>
+                                <button type="submit" class="form-button">Submit</button>
+                            </div> <!-- end of text-send -->
+                        </form>
+                    </div> <!-- end of contact-form -->
+                </div> <!-- end of email-container -->
+
                 <div class="contact-list">
+                    <h4>Social</h4>
                     <ul class="contact-links">
-                        <li>
+                        <!-- <li>
                             <a href="mailto:paigegiathai@gmail.com" rel="noopener noreferrer" >Email</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="https://www.linkedin.com/in/paigethai/">LinkedIn</a>
                         </li>

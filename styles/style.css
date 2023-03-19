@@ -291,17 +291,23 @@ li {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 4rem);
 }
 
 h3 {
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
 p {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   font-size: 0.8rem, 2vw, 1rem;
+}
+
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 a:hover,
@@ -320,8 +326,24 @@ a:focus {
   color: #813702;
 }
 
+.form-button {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.05rem;
+}
+.form-button button:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .show-green h2 {
   font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.contact h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: lighter;
+  margin: 5rem 0;
 }
 
 .logo-nav {
@@ -434,6 +456,8 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   padding: 0.8rem 2rem;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
 .individual-project button a {
@@ -441,8 +465,7 @@ img {
   padding: 5px;
 }
 
-button:hover,
-button:focus {
+.individual-project button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -553,7 +576,7 @@ button:focus {
 }
 
 .contact h3 {
-  margin: 5rem 0 2rem 0;
+  margin: 5rem;
   text-align: center;
 }
 .contact li {
@@ -561,6 +584,83 @@ button:focus {
 }
 .contact a {
   font-size: 1.5rem;
+}
+
+form {
+  margin-bottom: 5rem;
+}
+
+textarea {
+  height: 10rem;
+  width: 100%;
+  border: 1px solid #C36724;
+  background-color: #F5F5F5;
+  resize: none;
+}
+
+textarea[placeholder] {
+  padding: 0.5rem;
+}
+
+.form-button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 0.8rem 2rem;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #C36724;
+  background-color: #F5F5F5;
+}
+
+.form-button:hover {
+  color: white;
+  background-color: #9FA05E;
+}
+
+.email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.text-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-info input {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #C36724;
+}
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-list h4 {
+  margin-top: 7rem;
+}
+.contact-list .contact-links {
+  width: 47%;
+  margin-top: 3rem;
 }
 
 footer {

@@ -24,17 +24,23 @@ li {
 }
 
 h1 {
-    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-size: clamp(1.5rem, 6vw, 4rem);
 }
 
 h3 {
-    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
 p {
     line-height: 1.5rem;
     letter-spacing: 0.05rem;
     font-size: (0.8rem, 2vw, 1rem);
+}
+
+input,
+textarea {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.05rem;
 }
 
 a:hover,
@@ -53,6 +59,22 @@ a:focus {
     color: $buttonText;
 }
 
+.form-button {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.05rem;
+    
+    button:hover {
+        transform: none;
+    }
+}
+
 .show-green h2 {
     font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.contact h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-weight: lighter;
+    margin: 5rem 0;
 }

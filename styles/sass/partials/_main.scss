@@ -39,8 +39,7 @@ img {
     }
 }
 
-button:hover, 
-button:focus {
+.individual-project button:hover {
     transform: scale(1.1);
 }
 
@@ -144,8 +143,8 @@ button:focus {
 
 .contact {
     h3 {
-    margin: 5rem 0 2rem 0;
-    text-align: center;
+        margin: 5rem;
+        text-align: center;
     }
 
     li {
@@ -154,5 +153,66 @@ button:focus {
 
     a {
         font-size: 1.5rem;
+    }
+}
+
+form {
+    margin-bottom: 5rem;
+}
+
+
+textarea {
+    height: 10rem;
+    width: 100%;
+    border: 1px solid $headerColorOne;
+    background-color: $backgroundColor;
+    resize: none;
+}
+
+textarea[placeholder] {
+    padding: 0.5rem;
+}
+
+.form-button {
+    @include button;
+    border: 1px solid $headerColorOne;
+    background-color: $backgroundColor;
+}
+
+.form-button:hover {
+    color: white;
+    background-color: $headerColorTwo;
+}
+
+.email-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $borderColor;
+}
+
+.text-send {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info input {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid $headerColorOne;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        margin-top: 7rem;
+    }
+
+    .contact-links {
+        width: 47%;
+        margin-top: 3rem;
     }
 }
