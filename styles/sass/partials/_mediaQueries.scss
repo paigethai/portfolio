@@ -2,6 +2,10 @@
 @use './mixins' as *;
 
 @media (max-width: 1280px) {
+    .color-blocks .green-block h1 {
+        right: 3%;
+    }
+    
     .logo-nav nav ul {
         gap: 0;
     }
@@ -77,22 +81,15 @@
     .break-line {
         margin-top: 4rem;
     }
+
+    .comfort-overlay p {
+        padding: 10% 5%;
+    }
 }
 
 @media (max-width: 850px) {
-    .individual-project {
-        button {
-            padding: 0.5rem;
-        }
-        
-        h4 {
-        margin-top: 4%;
-        }
-
-        p {
-            font-size: clamp(0.8rem, 2vw, 1rem);
-            padding: 3% 1.5%;
-        }
+    .individual-project p {
+        font-size: clamp(0.8rem, 2vw, 1rem);
     }
 }
 
@@ -166,6 +163,24 @@
 }
 
 @media (max-width: 480px) {
+    .color-blocks .green-block h1 {
+        bottom: 40%;
+    }
+
+    .individual-project {
+        button {
+            padding: 0.5rem;
+        }
+
+        h4 {
+        margin-top: 4%;
+        }
+
+        p {
+            padding: 3% 1.5%;
+        }
+    }
+
     .overlay p {
         line-height: 1rem;
     }
@@ -181,10 +196,6 @@
     .contact-list h4 {
         margin: 2rem 0;
     }
-
-    footer {
-        margin-top: 3rem;
-    }
 }
 
 @media (max-width: 320px) {
@@ -199,9 +210,12 @@
         background-color: $headerColorTwo;
 
         h2 {
+            font-size: 2rem;
+            text-align: right;
             position: relative;
             top: 50%;
-            left: 35%;
+            left: 0;
+            margin-right: 0.5rem;
         }
     }
 

@@ -10,13 +10,22 @@ h3,
 h4,
 h5,
 button {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
 
 p,
 a,
+li {
+    color: $textColor;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    letter-spacing: 0.05rem;
+}
+
+a, 
 li {
     color: $textColor;
     font-family: 'DM Sans', sans-serif;
@@ -43,7 +52,7 @@ p {
 
 input,
 textarea {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     letter-spacing: 0.05rem;
 }
 
@@ -53,9 +62,14 @@ a:focus {
 }
 
 .logo {
+    font-family: 'Manrope', sans-serif;
     color: $textColor;
     font-size: clamp(1rem, 6vw, 3rem);
     letter-spacing: 0.2rem;
+}
+
+.fa-solid .fa-bars {
+    color: black;
 }
 
 .contact-links {
@@ -64,7 +78,7 @@ a:focus {
 }
 
 .form-button {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     letter-spacing: 0.05rem;
     
     button:hover {
@@ -76,9 +90,14 @@ a:focus {
     font-size: clamp(1.5rem, 6vw, 3rem);
 }
 
+.overlay h4 {
+    font-size: clamp(2rem, 5vw, 0.8rem);
+    font-weight: 400;
+}
+
 .contact h4 {
     margin: 5rem 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: clamp(1.3rem, 5vw, 2.5rem);
     font-weight: lighter;
     text-align: left;
