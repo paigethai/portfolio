@@ -634,7 +634,7 @@ textarea[placeholder] {
 }
 
 .form-button:hover {
-  color: white;
+  color: #000000;
   background-color: #9FA05E;
 }
 
