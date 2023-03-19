@@ -73,8 +73,9 @@ a:focus {
 }
 
 .contact h4 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: clamp(1.8rem, 2vw, 2.5rem);
-    font-weight: lighter;
     margin: 5rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.3rem, 2vw, 2.5rem);
+    font-weight: lighter;
+    text-align: left;
 }

@@ -109,14 +109,54 @@
         margin: 3rem 0 2rem 0;
     }
 
+    .email-container {
+        flex-direction: column;
+        align-items: center;
+
+        .contact-form {
+            width: 75%;
+        }
+
+        .user-info {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            width: 100%;
+            margin: 3rem;
+            text-align: center;
+        }
+    }
+
     .contact-list {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+
+        h4 {
+            width: 100%;
+            margin: 3rem;
+            text-align: center;
+        }
+
+        .contact-links {
+            margin: 0;
+            padding-top: 1rem;
+        }
     }
 }
 
 @media (max-width: 480px) {
     .overlay p {
         line-height: 1rem;
+    }
+
+    .email-container h4 {
+        margin: 2rem;
     }
 }
 

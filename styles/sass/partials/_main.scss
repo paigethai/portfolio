@@ -156,10 +156,23 @@ img {
     }
 }
 
+.email-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $borderColor;
+}
+
+.contact-form {
+    width: 50%;
+
+    h4 {
+        width: 50%;
+    }
+}
+
 form {
     margin-bottom: 5rem;
 }
-
 
 textarea {
     height: 10rem;
@@ -184,23 +197,22 @@ textarea[placeholder] {
     background-color: $headerColorTwo;
 }
 
-.email-container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $borderColor;
-}
-
 .text-send {
     display: flex;
     flex-direction: column;
 }
 
-.user-info input {
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    background-color: inherit;
-    border: none;
-    border-bottom: 1px solid $headerColorOne;
+.user-info {
+    display: flex;
+
+    input {
+        width: 50%;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid $headerColorOne;
+    }
 }
 
 .contact-list {
@@ -208,6 +220,7 @@ textarea[placeholder] {
     justify-content: space-between;
 
     h4 {
+        width: 50%;
         margin-top: 7rem;
     }
 

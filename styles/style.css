@@ -340,10 +340,11 @@ a:focus {
 }
 
 .contact h4 {
-  font-family: "DM Sans", sans-serif;
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
-  font-weight: lighter;
   margin: 5rem 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-weight: lighter;
+  text-align: left;
 }
 
 .logo-nav {
@@ -586,6 +587,23 @@ img {
   font-size: 1.5rem;
 }
 
+.email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.contact-form {
+  width: 50%;
+}
+.contact-form h4 {
+  width: 50%;
+}
+
 form {
   margin-bottom: 5rem;
 }
@@ -619,16 +637,6 @@ textarea[placeholder] {
   background-color: #9FA05E;
 }
 
-.email-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #000000;
-}
-
 .text-send {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,7 +647,13 @@ textarea[placeholder] {
           flex-direction: column;
 }
 
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .user-info input {
+  width: 50%;
   margin-bottom: 1rem;
   margin-right: 1rem;
   background-color: inherit;
@@ -656,6 +670,7 @@ textarea[placeholder] {
           justify-content: space-between;
 }
 .contact-list h4 {
+  width: 50%;
   margin-top: 7rem;
 }
 .contact-list .contact-links {
@@ -768,13 +783,58 @@ footer p {
   .contact h3 {
     margin: 3rem 0 2rem 0;
   }
-  .contact-list {
+  .email-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .email-container .contact-form {
+    width: 75%;
+  }
+  .email-container .user-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-container .user-info input {
+    width: 100%;
+  }
+  .email-container h4 {
+    width: 100%;
+    margin: 3rem;
     text-align: center;
+  }
+  .contact-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact-list h4 {
+    width: 100%;
+    margin: 3rem;
+    text-align: center;
+  }
+  .contact-list .contact-links {
+    margin: 0;
+    padding-top: 1rem;
   }
 }
 @media (max-width: 480px) {
   .overlay p {
     line-height: 1rem;
+  }
+  .email-container h4 {
+    margin: 2rem;
   }
 }
 @media (max-width: 320px) {
