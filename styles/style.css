@@ -298,6 +298,10 @@ h3 {
   font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
+h4 {
+  font-size: clamp(1.5rem, 2vw, 0.8rem);
+}
+
 p {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
@@ -367,7 +371,7 @@ a:focus {
 .logo-nav nav {
   background-color: #F5F5F5;
   width: 50%;
-  border: 1px solid #000000;
+  border-left: 1px solid #000000;
 }
 .logo-nav nav ul {
   display: -webkit-box;
@@ -384,6 +388,7 @@ a:focus {
 
 nav a {
   padding: 5px;
+  border: 1px solid transparent;
 }
 
 nav a:hover {
@@ -411,13 +416,12 @@ nav a:hover {
 .color-blocks .orange-block {
   width: 50%;
   height: 100%;
-  border: 1px solid #000000;
   background-color: #C36724;
 }
 .color-blocks .green-block {
   width: 50%;
   height: 100%;
-  border: 1px solid #000000;
+  border-left: 1px solid #000000;
   background-color: #9FA05E;
 }
 .color-blocks .green-block h1 {
@@ -446,7 +450,6 @@ img {
   text-align: center;
 }
 .individual-project h4 {
-  font-size: clamp(1.5rem, 2vw, 0.8rem);
   margin-top: 7%;
 }
 .individual-project p {
@@ -458,8 +461,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   padding: 0.8rem 2rem;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
 .individual-project button a {
@@ -626,8 +627,6 @@ textarea[placeholder] {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   padding: 0.8rem 2rem;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   border: 1px solid #C36724;
   background-color: #F5F5F5;
@@ -672,7 +671,6 @@ textarea[placeholder] {
 }
 .contact-list h4 {
   width: 50%;
-  margin-top: 7rem;
 }
 .contact-list .contact-links {
   width: 47%;
@@ -692,6 +690,9 @@ footer p {
 @media (max-width: 1280px) {
   .logo-nav nav ul {
     gap: 0;
+  }
+  .project-buttons {
+    margin-top: 5%;
   }
 }
 @media (max-width: 1050px) {
@@ -781,6 +782,9 @@ footer p {
   .projects h3 {
     margin: 3rem;
   }
+  .comfort-overlay .project-buttons {
+    margin-top: 3%;
+  }
   .contact h3 {
     margin: 3rem 0 2rem 0;
   }
@@ -807,7 +811,6 @@ footer p {
   }
   .email-container h4 {
     width: 100%;
-    margin: 3rem;
     text-align: center;
   }
   .contact-list {
@@ -822,7 +825,6 @@ footer p {
   }
   .contact-list h4 {
     width: 100%;
-    margin: 3rem;
     text-align: center;
   }
   .contact-list .contact-links {

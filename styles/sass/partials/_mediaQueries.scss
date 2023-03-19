@@ -5,6 +5,10 @@
     .logo-nav nav ul {
         gap: 0;
     }
+
+    .project-buttons {
+        margin-top: 5%;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -105,6 +109,12 @@
         margin: 3rem; 
     }
 
+    .comfort-overlay {
+        .project-buttons {
+            margin-top: 3%;
+        }
+    }
+
     .contact h3 {
         margin: 3rem 0 2rem 0;
     }
@@ -127,7 +137,6 @@
 
         h4 {
             width: 100%;
-            margin: 3rem;
             text-align: center;
         }
     }
@@ -139,7 +148,6 @@
 
         h4 {
             width: 100%;
-            margin: 3rem;
             text-align: center;
         }
 

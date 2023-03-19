@@ -20,7 +20,6 @@ img {
     text-align: center;
 
     h4 {
-        font-size: clamp(1.5rem, 2vw, 0.8rem);
         margin-top: 7%;
     }
 
@@ -221,7 +220,7 @@ textarea[placeholder] {
 
     h4 {
         width: 50%;
-        margin-top: 7rem;
+        // margin-top: 7rem;
     }
 
     .contact-links {

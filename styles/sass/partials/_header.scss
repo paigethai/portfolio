@@ -19,7 +19,7 @@
         background-color: $backgroundColor;
         // padding: 1rem;
         width: 50%;
-        border: 1px solid $borderColor;
+        border-left: 1px solid $borderColor;
 
         ul {
             display: flex;
@@ -35,6 +35,7 @@
 
 nav a {
     padding: 5px;
+    border: 1px solid transparent;
 } 
 
 nav 
@@ -61,14 +62,14 @@ a:hover {
     .orange-block {
         width: 50%;
         height: 100%;
-        border: 1px solid $borderColor;
+        // border: 1px solid $borderColor;
         background-color: $headerColorOne;
     }
 
     .green-block {        
     width: 50%;
     height: 100%;
-    border: 1px solid $borderColor;
+    border-left: 1px solid $borderColor;
     background-color: $headerColorTwo;
 
     h1 {
