@@ -346,7 +346,7 @@ a:focus {
 .contact h4 {
   margin: 5rem 0;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-size: clamp(1.3rem, 5vw, 2.5rem);
   font-weight: lighter;
   text-align: left;
 }
@@ -785,6 +785,9 @@ footer p {
   .comfort-overlay .project-buttons {
     margin-top: 3%;
   }
+  .contact h4 {
+    margin: 3rem 0;
+  }
   .contact h3 {
     margin: 3rem 0 2rem 0;
   }
@@ -825,6 +828,7 @@ footer p {
   }
   .contact-list h4 {
     width: 100%;
+    margin: 3rem 0;
     text-align: center;
   }
   .contact-list .contact-links {
@@ -836,8 +840,17 @@ footer p {
   .overlay p {
     line-height: 1rem;
   }
+  .contact-form {
+    width: 90%;
+  }
   .email-container h4 {
     margin: 2rem;
+  }
+  .contact-list h4 {
+    margin: 2rem 0;
+  }
+  footer {
+    margin-top: 3rem;
   }
 }
 @media (max-width: 320px) {
@@ -872,5 +885,8 @@ footer p {
   }
   .project-buttons button {
     margin-top: 1rem;
+  }
+  .email-container .contact-form {
+    width: 90%;
   }
 }

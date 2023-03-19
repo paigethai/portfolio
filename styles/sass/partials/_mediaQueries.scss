@@ -115,9 +115,15 @@
         }
     }
 
-    .contact h3 {
+    .contact {
+        h4 {
+            margin: 3rem 0;
+        }
+
+        h3 {
         margin: 3rem 0 2rem 0;
-    }
+        }
+    }    
 
     .email-container {
         flex-direction: column;
@@ -148,6 +154,7 @@
 
         h4 {
             width: 100%;
+            margin: 3rem 0;
             text-align: center;
         }
 
@@ -163,8 +170,20 @@
         line-height: 1rem;
     }
 
+    .contact-form {
+        width: 90%;
+    }
+
     .email-container h4 {
         margin: 2rem;
+    }
+
+    .contact-list h4 {
+        margin: 2rem 0;
+    }
+
+    footer {
+        margin-top: 3rem;
     }
 }
 
@@ -208,6 +227,10 @@
 
     .project-buttons button {
         margin-top: 1rem;
+    }
+
+    .email-container .contact-form {
+        width: 90%;
     }
 }
 
