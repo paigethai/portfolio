@@ -1,0 +1,250 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@media (max-width: 1280px) {
+    .color-blocks .green-block h1 {
+        right: 3%;
+    }
+    
+    .logo-nav nav ul {
+        gap: 0;
+    }
+
+    .project-buttons {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: relative;
+
+        button {
+                position: absolute;
+                top: 0.5rem;
+                right: 2rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                :hover,
+                :focus {
+                    color: $buttonText;
+                }
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+    }
+
+    .ham-links {
+        display: none;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+    
+    .logo-nav nav ul li {
+        padding: 1rem;
+    }
+
+    .about h3 {
+        margin: 5rem 0 2rem 0;
+    }
+    .about-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+        figure {
+            width: 100%;
+        }
+
+        .text-container {
+            width: 100%;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .break-line {
+        margin-top: 4rem;
+    }
+
+    .comfort-overlay p {
+        padding: 10% 5%;
+    }
+}
+
+@media (max-width: 850px) {
+    .individual-project p {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 700px) {
+    .skills {
+        padding-bottom: 5rem;
+
+        h3 {
+            margin: 4rem 0 2rem;
+        }
+    }
+
+    .projects h3 {
+        margin: 3rem; 
+    }
+
+    .comfort-overlay {
+        .project-buttons {
+            margin-top: 3%;
+        }
+    }
+
+    .contact {
+        h4 {
+            margin: 3rem 0;
+        }
+
+        h3 {
+        margin: 3rem 0 2rem 0;
+        }
+    }    
+
+    .email-container {
+        flex-direction: column;
+        align-items: center;
+
+        .contact-form {
+            width: 75%;
+        }
+
+        .user-info {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h4 {
+            width: 100%;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .contact-links {
+            margin: 0;
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .color-blocks .green-block h1 {
+        bottom: 40%;
+    }
+
+    .individual-project {
+        button {
+            padding: 0.5rem;
+        }
+
+        h4 {
+        margin-top: 4%;
+        }
+
+        p {
+            padding: 3% 1.5%;
+        }
+    }
+
+    .overlay p {
+        line-height: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .email-container h4 {
+        margin: 2rem;
+    }
+
+    .contact-list h4 {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .color-blocks {
+        display: none;
+    }
+
+    .show-green {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        background-color: $headerColorTwo;
+
+        h2 {
+            font-size: 2rem;
+            text-align: right;
+            position: relative;
+            top: 50%;
+            left: 0;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .about-container {
+        text-align: center;
+    }
+
+    .break-line {
+        margin-top: 3rem;
+    }
+
+    .skills {
+        padding-bottom: 3rem;
+    }
+
+    .overlay {
+        width: 100%;
+    }
+
+    .individual-project p {
+        display: none;
+    }
+
+    .project-buttons button {
+        margin-top: 1rem;
+    }
+
+    .email-container .contact-form {
+        width: 90%;
+    }
+}
+

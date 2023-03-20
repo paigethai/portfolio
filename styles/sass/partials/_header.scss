@@ -1,0 +1,82 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    border: 1px solid $borderColor;
+    background-color: $headerColorOne;
+
+    .logo {
+        padding: 1rem;
+        width: 50%;
+    }
+
+    nav {
+        background-color: $backgroundColor;
+        // padding: 1rem;
+        width: 50%;
+        border-left: 1px solid $borderColor;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 6%;
+
+            li {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+nav a {
+    padding: 5px;
+    border: 1px solid transparent;
+} 
+
+nav 
+a:hover {
+    color: $buttonText;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    color: $textColor;
+}
+
+.show-green {
+    display: none;
+}
+
+.color-blocks {
+    display: flex;
+    height: 90vh;
+    border: 1px solid $borderColor;
+
+    .orange-block {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid $borderColor;
+        background-color: $headerColorOne;
+    }
+
+    .green-block {        
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid $borderColor;
+    background-color: $headerColorTwo;
+
+    h1 {
+        position: absolute;
+        bottom: 28%;
+        right: 5%;
+        text-align: right;
+    }
+    }
+}

@@ -1,0 +1,234 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+img {
+    border: 1.5px solid $borderColor;
+}
+
+.projects {
+    padding-bottom: 7rem;
+    border-bottom: 1px solid $borderColor;
+
+    h3 {
+    text-align: center;
+    margin: 5rem;
+    }
+}
+.individual-project {
+    position: relative;
+    margin-top: 3rem;
+    text-align: center;
+
+    h4 {
+        margin-top: 7%;
+    }
+
+    p {
+        font-size: clamp(1rem, 2vw, 0.5rem);
+        padding: 5% 5%;
+    }
+
+    button {
+        @include button;
+        
+        a {
+            border: none;
+            padding: 5px;
+        }
+    }
+}
+
+.individual-project button:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: scale(0);
+    transition: all 0s ease-in-out;
+    background-color: $overlay;
+    opacity: 95%;
+}
+
+.individual-project:hover .overlay {
+    transform: scale(1);
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shoe-kloset,
+.bikerland {
+    p {
+        padding: 10% 5%;
+    }
+}
+
+.comfort-overlay p {
+    padding: 10% 5%;
+}
+
+.about {
+    margin-top: 3rem;
+
+    h3 {
+        text-align: center;
+        margin: 5rem;
+    }
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    
+    figure {
+        width: 40%;
+        // margin-top: 1.5rem;
+
+        img {
+            border: none;
+            border-radius: 5%;
+        }
+    }
+
+    .text-container {
+        width: 45%;
+        // padding: 3rem 1rem 1rem 3rem;
+        z-index: 20;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.skills {
+    border-bottom: 1px solid $borderColor;
+    padding-bottom: 7rem;
+}
+
+.break-line {
+    margin-top: 10rem;
+    border: 1px solid $borderColor;
+}
+
+.skills h3 {
+    margin: 5rem 5rem 3rem 5rem;
+    text-align: center;
+}
+
+.skills-icons-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    
+    li {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    i {
+        font-size: 3.5rem;
+    }
+
+    img {
+        border: none;
+        width: 75%;
+    }
+}
+
+.contact {
+    h3 {
+        margin: 5rem;
+        text-align: center;
+    }
+
+    li {
+        padding: 1rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+.email-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $borderColor;
+}
+
+.contact-form {
+    width: 50%;
+
+    h4 {
+        width: 50%;
+    }
+}
+
+form {
+    margin-bottom: 5rem;
+}
+
+textarea {
+    height: 10rem;
+    width: 100%;
+    border: 1px solid $headerColorOne;
+    background-color: $backgroundColor;
+    resize: none;
+}
+
+textarea[placeholder] {
+    padding: 0.5rem;
+}
+
+.form-button {
+    @include button;
+    border: 1px solid $headerColorOne;
+    background-color: $backgroundColor;
+}
+
+.form-button:hover {
+    color: $textColor;
+    background-color: $headerColorTwo;
+}
+
+.text-send {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    display: flex;
+
+    input {
+        width: 50%;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid $headerColorOne;
+    }
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        width: 50%;
+        // margin-top: 7rem;
+    }
+
+    .contact-links {
+        width: 47%;
+        margin-top: 3rem;
+    }
+}
