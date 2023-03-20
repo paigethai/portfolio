@@ -869,10 +869,19 @@ footer p {
     margin-top: 4%;
   }
   .individual-project p {
-    padding: 3% 1.5%;
+    display: none;
+  }
+  .overlay {
+    width: 100%;
   }
   .overlay p {
     line-height: 1rem;
+  }
+  .project-buttons {
+    margin-top: 10%;
+  }
+  .comfort-overlay .project-buttons {
+    margin-top: 10%;
   }
   .contact-form {
     width: 90%;
@@ -910,15 +919,6 @@ footer p {
   }
   .skills {
     padding-bottom: 3rem;
-  }
-  .overlay {
-    width: 100%;
-  }
-  .individual-project p {
-    display: none;
-  }
-  .project-buttons button {
-    margin-top: 1rem;
   }
   .email-container .contact-form {
     width: 90%;
